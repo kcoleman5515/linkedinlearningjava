@@ -1,29 +1,33 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
+  public static void announceDeveloperTeaTime() {
+    System.out.println("Waiting for developer tea time...");
+    System.out.println("Type in any word and press enter to start developer tea time");
+    Scanner input = new Scanner(System.in);
+    input.next();
+    System.out.println("It's developer tea time!");
+  }
+
+  public static void calculateTotalMealPrice(double listedMealPrice, double tipRate, double taxRate) {
+    System.out.println("What is my total owed for my meal?");
+    double tip = tipRate * listedMealPrice;
+    double tax = taxRate * listedMealPrice;
+    double result = listedMealPrice + tip + tax;
+    System.out.println("What is my total owed for my meal?");
+
+  }
 
   public static void main(String[] args) {
-    String question = "If a dog is not a cat, what is it?";
-    String choiceOne = "bird";
-    String choiceTwo = "cat";
-    String choiceThree = "dog";
-    String correct = "This is the correct answer";
-    String incorrect = "This is NOT the correct answer";
+    System.out.println("Welcome to your new job");
 
-    System.out.println(question);
-    System.out.println(choiceOne);
-    System.out.println(choiceTwo);
-    System.out.println(choiceThree);
-    System.out.println("Select your answer");
+    announceDeveloperTeaTime();
 
-    Scanner scanner = new Scanner(System.in);
-    String input = scanner.next();
+    System.out.println("Write code");
+    System.out.println("Review code");
 
-    if (choiceThree.equals(input.toLowerCase())) {
-      System.out.println(correct);
-    } else {
-      System.out.println(incorrect);
-    }
+    announceDeveloperTeaTime();
+
+    System.out.println("Get promoted!");
   }
 }
