@@ -1,19 +1,29 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    boolean isOnRepeat = true;
-    while(isOnRepeat) {
-      System.out.println("Playing current song");
-      System.out.println("Would you like to take this song off repeat? If so, answer yes.");
-      String userInput = input.next();
+    String question = "If a dog is not a cat, what is it?";
+    String choiceOne = "bird";
+    String choiceTwo = "cat";
+    String choiceThree = "dog";
+    String correct = "This is the correct answer";
+    String incorrect = "This is NOT the correct answer";
 
-      if(userInput.equals("yes")) {
-        isOnRepeat = false;
-      }
+    System.out.println(question);
+    System.out.println(choiceOne);
+    System.out.println(choiceTwo);
+    System.out.println(choiceThree);
+    System.out.println("Select your answer");
+
+    Scanner scanner = new Scanner(System.in);
+    String input = scanner.next();
+
+    if (choiceThree.equals(input.toLowerCase())) {
+      System.out.println(correct);
+    } else {
+      System.out.println(incorrect);
     }
-    System.out.println("Playing next song");
   }
 }
