@@ -18,12 +18,20 @@ public class Main {
 
   }
 
+  public static double calculateSalary(double hourlyPay, double hoursWorkedPerWeek) {
+    double weeklyPaycheck = hourlyPay * hoursWorkedPerWeek;
+    return weeklyPaycheck;
+  }
+
   public static void main(String[] args) {
+    double salary = calculateSalary(18, 40);
+    System.out.println("Estimated yearly salary before tax is " + (salary * 52));
 
-    double groupTotalMealPrice = calculateTotalMealPrice(110, .2, .08);
-    System.out.println(groupTotalMealPrice);
 
-    double individualMealPrice = groupTotalMealPrice / 5;
-    System.out.println(individualMealPrice);
+//    double groupTotalMealPrice = calculateTotalMealPrice(110, .2, .08);
+//    System.out.println(groupTotalMealPrice);
+//
+//    double individualMealPrice = groupTotalMealPrice / 5;
+//    System.out.println(individualMealPrice);
   }
 }
