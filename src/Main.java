@@ -10,5 +10,9 @@ public class Main {
     System.out.println(triangleAArea);
 
 
+    double triangleBArea = triangleB.findArea();
+    System.out.println(triangleBArea);
+
+//    Triangle.findArea()? --> Math.pow(2,3)?
   }
 }
