@@ -1,6 +1,8 @@
 public class Triangle {
 
   // Properties
+
+  static int numOfSides;
   double base;
   double height;
   double sideLenOne;
