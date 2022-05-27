@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Main {
 //  public static void announceDeveloperTeaTime() {
@@ -8,6 +7,12 @@ public class Main {
 //    input.next();
 //    System.out.println("It's developer tea time!");
 //  }
+
+  public void Triangle(double base, double height,
+      double sideLenOne, double sideLenTwo, double sideLenThree) {
+    
+  }
+
 
   public static double calculateTotalMealPrice(double listedMealPrice, double tipRate, double taxRate) {
     System.out.println("What is my total owed for my meal?");
